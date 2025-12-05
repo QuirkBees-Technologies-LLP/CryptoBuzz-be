@@ -9,7 +9,7 @@ export const healthcheck = (req, res) => {
 
   return res
     .status(200)
-    .json(new ApiResponse(200, payload, "Healthcheck passed"));
+    .json(ApiResponse(200, payload, "Healthcheck passed"));
 };
 
 export default { healthcheck };
